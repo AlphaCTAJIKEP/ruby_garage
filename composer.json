@@ -1,0 +1,17 @@
+{
+    "name": "vlad/rubygarage",
+    "description": "rubygarage",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Vlad Gladko",
+            "email": "v-gladko@mail.ua"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "app":"app/"
+        }
+    }
+}

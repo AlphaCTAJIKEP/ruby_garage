@@ -1,0 +1,254 @@
+body{
+    background: linear-gradient(#d5d3c1, #d18c0e);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+}
+
+.border-ruby{
+    border-color:#315589
+}
+
+
+header{
+    padding: 25px;
+}
+
+.header-subtitle, .header-title{
+    text-align: center;
+    color: #333;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+}
+
+.header-title{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header-subtitle{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.header-success__message{
+    display: none;
+    color: #447557 !important;
+    font-size: 18px;
+}
+
+.header-errors__message, .modal-error{
+    display: none;
+    color: red !important;
+    font-size: 18px;
+}
+
+.header-logout{
+    cursor: pointer;
+}
+
+.project-container{
+    font-family: 'Arial', sans-serif;
+    max-width: 700px !important;
+}
+
+.project-header{
+    background: url('../img/background-project.png');
+    background-position: 0;
+}
+
+.project-header__icon{
+    color: #414F6E;
+}
+
+.project-header__title{
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+}
+
+.project-header__edit{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    color: #98B0D2;
+    border-color: #98B0D2 !important;
+}
+
+.project-input{
+    background: #DCDCDC;
+    align-items: center;
+}
+
+.project-input__input input{
+    padding: 5px;
+    font-size: 14px;
+    width: 100%;
+    height: 30px;
+}
+
+.project-input__icon{
+    color: #5A9074;
+}
+
+.project-button__add{
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+    text-decoration: none;
+    padding: 5px 20px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background: url('../img/background-button.png');
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #447557;
+}
+
+.project-button__add:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.project-row{
+    font-family: 'Arial',sans-serif;
+    background: #fff;
+    border: 1px solid #E7EBEA;
+}
+
+.project-row:last-child{
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.project-row:hover{
+    background: #FCFED5;
+}
+
+.project-row__checkbox{
+    position: relative;
+    border-right: 1px solid #EFDADF;
+}
+
+.project-row__checkbox:after{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 100%;
+    right: 4px;
+    top: 0;
+    background: #EFDADF;
+}
+
+.project-row__checkbox input{
+    vertical-align: middle;
+}
+
+.project-row__name{
+    color: #999;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.project-row__edit{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #999;
+    border-color: #999 !important;
+}
+
+.sort-container{
+    height: 16px;
+}
+
+.sort-container i{
+    height: 50%;
+    line-height: 0.5;
+}
+
+.sort-container i:hover{
+    color: #333;
+}
+
+.footer-button{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.footer-button a{
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+    text-decoration: none;
+    padding: 5px 20px 5px 5px;
+    display: flex;
+    align-items: center;
+    background: url('../img/background-project.png');
+    background-position: 0;
+    border-radius: 5px;
+    border: 1px solid #315589;
+}
+
+.footer-button a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.footer-button i, .footer-button a:hover i{
+    color: #304870;
+}
+
+
+/* SIGNIN FORM */
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+  }
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+
+  .form-signin input {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .btn-primary{
+    background: url('../img/background-project.png') !important;
+    background-position: 0 !important;
+    background-color: none;
+    }   
+
+    form .error{
+        display: none;
+        color: red;
+    }
