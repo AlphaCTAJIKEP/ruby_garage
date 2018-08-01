@@ -32,10 +32,10 @@
                         <div class="col-md-1 p-2 text-center project-row__checkbox">
                             <input type="checkbox" <?php echo $task['status'] == 1 ? 'checked' : 'test' ?>>
                         </div>
-                        <div class="col-md-9 p-2 project-row__name">
+                        <div class="col-md-9 p-2 project-row__name border-right">
                             <?= $task['name']; ?>
                         </div>
-                        <div class="col-md-2 p-2 border-left project-row__edit">
+                        <div class="col-md-2 p-2 project-row__edit">
                             <div class="d-flex flex-column  border-right pr-2 sort-container">
                                 <i class="fas fa-sort-up sort-up"></i>
                                 <i class="fas fa-sort-down sort-down"></i>

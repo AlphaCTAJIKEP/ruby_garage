@@ -168,7 +168,12 @@ header{
     cursor: pointer;
     font-size: 16px;
     color: #999;
+    opacity: 0;
     border-color: #999 !important;
+}
+
+.project-row:hover .project-row__edit{
+    opacity: 1;
 }
 
 .sort-container{
