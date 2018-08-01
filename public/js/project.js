@@ -178,7 +178,7 @@ const addProject = data => {
                     <input type="text" placeholder="Start typing here to create a task">
                 </div>
                 <div class="col-md-2 py-2 pl-0">
-                    <a href="#" class="project-button__add">Add Task</a>
+                    <a href="#" class="project-button__add task-success">Add Task</a>
                 </div>
             </div>
         </div>`;
