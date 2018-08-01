@@ -1,0 +1,15 @@
+SELECT `status`, COUNT(`status`) as count FROM tasks WHERE 1 GROUP BY `status` ORDER BY `status` ASC 
+
+SELECT `project_id`, COUNT(`project_id`) as 'task_count' FROM tasks WHERE 1 GROUP BY `project_id` ORDER BY 'task_count' DESC
+
+SELECT COUNT(task.id) as count FROM task INNER JOIN project ON task.project_id = project.id GROUP BY task.project_id ORDER BY project.name
+
+SELECT * FROM task WHERE name LIKE 'N%'
+
+SELECT task.project_id, COUNT(task.id) as 'count' FROM task INNER JOIN project ON project.id = task.project_id AND project.name LIKE '%a%' GROUP BY task.project_id
+
+SELECT name,COUNT(*) FROM task GROUP BY name HAVING COUNT(*) > 1 ORDER BY name ASC
+
+SELECT task.* FROM task INNER JOIN project ON task.project_id = project.id AND project.name = 'Garage' AND task.name = task.status
+
+SELECT COUNT(task.id), project.name FROM project INNER JOIN task ON task.project_id = project.id AND task.status = 'completed' GROUP BY project.name HAVING COUNT(task.id) > 10
